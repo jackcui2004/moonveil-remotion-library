@@ -31,18 +31,21 @@ jobs:
           import os
           import re
           import time
-          import urllib.request
+          import subprocess
 
           # The fixed public reader revalidates and saves its YouTube cache.
           # No checkout, API keys, repository permissions, AI, or local computer needed.
           for attempt in range(3):
               try:
-                  request = urllib.request.Request(
-                      os.environ["MOONVEIL_SYNC_URL"],
-                      headers={"Accept": "application/json", "Cache-Control": "no-cache"},
+                  response = subprocess.run(
+                      ["curl", "--fail-with-body", "--silent", "--show-error",
+                       "--max-time", "45", "--proto", "=https",
+                       "-H", "Accept: application/json",
+                       "-H", "Cache-Control: no-cache",
+                       os.environ["MOONVEIL_SYNC_URL"]],
+                      check=True, capture_output=True, text=True,
                   )
-                  with urllib.request.urlopen(request, timeout=45) as response:
-                      data = json.load(response)
+                  data = json.loads(response.stdout)
                   stories = data.get("stories", [])
                   ids = [story.get("id", "") for story in stories]
                   if not ids or len(set(ids)) != len(ids):
