@@ -1,0 +1,74 @@
+name: Sync Moonveil website
+
+on:
+  schedule:
+    - cron: '15 * * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/sync-moonveil-site.yml'
+
+permissions: {}
+
+concurrency:
+  group: moonveil-site-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    name: Refresh YouTube stories
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - name: Sync and verify saved stories
+        env:
+          MOONVEIL_SYNC_URL: https://moonveil-stories.veggieg-2735.chatgpt.site/api/stories
+        shell: python
+        run: |
+          import datetime
+          import json
+          import os
+          import re
+          import time
+          import urllib.request
+
+          # The fixed public reader revalidates and saves its YouTube cache.
+          # No checkout, API keys, repository permissions, AI, or local computer needed.
+          for attempt in range(3):
+              try:
+                  request = urllib.request.Request(
+                      os.environ["MOONVEIL_SYNC_URL"],
+                      headers={"Accept": "application/json", "Cache-Control": "no-cache"},
+                  )
+                  with urllib.request.urlopen(request, timeout=45) as response:
+                      data = json.load(response)
+                  stories = data.get("stories", [])
+                  ids = [story.get("id", "") for story in stories]
+                  if not ids or len(set(ids)) != len(ids):
+                      raise ValueError("The saved collection is empty or contains duplicate IDs.")
+                  if not all(re.fullmatch(r"[\w-]{11}", video_id) for video_id in ids):
+                      raise ValueError("The collection contains an invalid video ID.")
+                  if data.get("syncState") != "ready":
+                      raise ValueError("YouTube sync is delayed; the website is keeping its saved collection.")
+                  synced = datetime.datetime.fromisoformat(
+                      data["lastSyncedAt"].replace("Z", "+00:00")
+                  )
+                  age = datetime.datetime.now(datetime.timezone.utc) - synced
+                  if age.total_seconds() < -300 or age.total_seconds() > 90 * 60:
+                      raise ValueError("The last successful sync is not recent.")
+                  summary = (
+                      f"Synced {len(stories)} stories.\n"
+                      f"Last successful sync: {synced.isoformat()}\n"
+                      f"Source: {data.get('source', 'YouTube')}\n"
+                  )
+                  print(summary)
+                  if os.environ.get("GITHUB_STEP_SUMMARY"):
+                      with open(os.environ["GITHUB_STEP_SUMMARY"], "a") as report:
+                          report.write(summary)
+                  break
+              except Exception as error:
+                  print(f"Attempt {attempt + 1} failed: {error}")
+                  if attempt == 2:
+                      raise
+                  time.sleep(20)
