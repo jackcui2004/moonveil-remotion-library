@@ -1,0 +1,51 @@
+{
+  "output": "All-65-original.mp4",
+  "bytes": 76885552,
+  "sha256": "9b6ba1b7dd3ee976ed901cd764814e85da4e6d7301b558080df97ef1f03ef857",
+  "parts": [
+    {
+      "file": "All-65.part01.bin",
+      "bytes": 10000000,
+      "sha256": "3071211261383239659fe13e3acae856b9bda3a0b51a0a8d052c412fbae17baa"
+    },
+    {
+      "file": "All-65.part02.bin",
+      "bytes": 10000000,
+      "sha256": "c126cd349d0e6604032b7e7365a495fd27e63e86393c7476c8cab32bb7c6660a"
+    },
+    {
+      "file": "All-65.part03.bin",
+      "bytes": 10000000,
+      "sha256": "eb7eed1d9f3cfe9da9aa8dbc65946c741526d21042317c33638201b837fd2c41"
+    },
+    {
+      "file": "All-65.part04.bin",
+      "bytes": 10000000,
+      "sha256": "ac60c03af7414e24698cbf38508d23f2dc2d20552f4be925854cd8688c3fa5a7"
+    },
+    {
+      "file": "All-65.part05.bin",
+      "bytes": 10000000,
+      "sha256": "5981c1f6e6793d1feaf9635923889009bd1ff8979610db5b3586cfb2baa82ff2"
+    },
+    {
+      "file": "All-65.part06.bin",
+      "bytes": 10000000,
+      "sha256": "2fe7b98730a8c299fb543ddd28b325df6df4dfbd2428a0835a6db5434e348233"
+    },
+    {
+      "file": "All-65.part07.bin",
+      "bytes": 10000000,
+      "sha256": "7b84a16104e96abc5adc426eeef935b974416babcd2a1adeaac868e7dfc0642b"
+    },
+    {
+      "file": "All-65.part08.bin",
+      "bytes": 6885552,
+      "sha256": "49cc6a5681590bf5a6d6843963fd461f3d37bd595464f939294aeac1e697c160"
+    }
+  ],
+  "duration_seconds": 405,
+  "frames": 12150,
+  "resolution": "1920x1080",
+  "quality": "original CRF18 veryfast"
+}

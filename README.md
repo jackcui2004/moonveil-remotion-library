@@ -15,3 +15,10 @@ Settings → Pages → Deploy from a branch → main / (root)。根目录有inde
 ## 来源和许可
 
 第三方代码许可保留在对应资料目录。音效来源和授权核实状态逐项记录；本仓库不对所有文件统一授予MIT，不将参考演示视频作为自有素材。
+
+
+## 新增：65项分镜与运镜效果库
+
+[在线逐项观看](https://jackcui2004.github.io/moonveil-remotion-library/motion-atlas/) · [分类与照片复用指南](motion-atlas/planning.md) · [65个独立源码入口](motion-atlas/project/src/effects/) · [全部演示视频](motion-atlas/videos/All-65.mp4)
+
+按九类剧情用途选择，含65个独立视频、每项照片预算与复用规则，以及完整工程。
