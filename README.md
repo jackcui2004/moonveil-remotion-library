@@ -8,6 +8,14 @@
 
 公开版不含私人文章全文、完整字幕时间轴、个人目录与私人生产记录。新资料放08，补来源和备注，再运行python3 09_维护工具/更新目录.py。
 
+## 当前默认：剧情驱动 Vox
+
+**先读剧情，再设计镜头、底板和组件变体。** 后续小说沿用Vox的信息层级，根据当篇语义重排构图、运动速率、停顿、图板形状和色彩。65项效果作为可拆改的能力库，不按编号逐一套用。
+
+[观看认可的两分钟实片](https://jackcui2004.github.io/moonveil-remotion-library/vox-story/) · [完整制作约定](vox-story/story-driven-vox.md) · [17个逐镜理由](vox-story/shot-design.json) · [独立Remotion源码](vox-story/project/) · [下载工程](vox-story/cage-vox-story-project.zip)
+
+本例使用6张已有图，新增AI图片0、AI视频0，含现成旁白和字幕。90分钟素材预算以24–30张图、0–2段视频为参考目标，按剧情复杂度调整。本例是人工/模型阅读后逐段设计并编码的样片，不是任意小说一键编排系统，也不把这17个镜头固定给下一篇。
+
 ## GitHub Pages
 
 Settings → Pages → Deploy from a branch → main / (root)。根目录有index.html和.nojekyll，无需构建依赖。

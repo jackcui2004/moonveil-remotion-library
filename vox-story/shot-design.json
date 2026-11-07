@@ -1,0 +1,174 @@
+{
+  "duration_seconds": 120,
+  "narration_source": "original provided audio, no new TTS; first118.16s plus1.833s opening lead",
+  "source_images_used": [
+    "IMG01",
+    "IMG02",
+    "IMG03",
+    "IMG05",
+    "IMG06",
+    "IMG13"
+  ],
+  "new_ai_images": 0,
+  "new_ai_videos": 0,
+  "design": "Vox-derived editorial thriller; irregular paper edges, mirror aperture, phone perspective and code-native hand-traced paper-character masks",
+  "scenes": [
+    {
+      "start_s": 0.0,
+      "end_s": 9.04,
+      "scene": "wheel",
+      "story_reason_zh": "掌心与方向盘：从身体触感进入，没有先放模板标题卡",
+      "source_images": [
+        "IMG13"
+      ]
+    },
+    {
+      "start_s": 9.04,
+      "end_s": 18.24,
+      "scene": "road",
+      "story_reason_zh": "旁白转向Route 9，画面扩成挡风玻璃与雨路",
+      "source_images": [
+        "IMG06"
+      ]
+    },
+    {
+      "start_s": 18.24,
+      "end_s": 25.2,
+      "scene": "wiper",
+      "story_reason_zh": "雨刷横切灯光；下一镜关注点转向手机",
+      "source_images": [
+        "IMG06",
+        "IMG13"
+      ]
+    },
+    {
+      "start_s": 25.2,
+      "end_s": 36.72,
+      "scene": "phone",
+      "story_reason_zh": "手机、线缆和手的空间关系，沿线进入消息",
+      "source_images": [
+        "IMG13"
+      ]
+    },
+    {
+      "start_s": 36.72,
+      "end_s": 43.2,
+      "scene": "message",
+      "story_reason_zh": "只在读到消息时呈现原句；柔性玻璃边缘替代硬方卡",
+      "source_images": [
+        "IMG13"
+      ]
+    },
+    {
+      "start_s": 43.2,
+      "end_s": 48.16,
+      "scene": "sender",
+      "story_reason_zh": "收件人身份是此处的信息增量，背景转为酒红档案纸",
+      "source_images": [
+        "IMG03"
+      ]
+    },
+    {
+      "start_s": 48.16,
+      "end_s": 57.36,
+      "scene": "archive",
+      "story_reason_zh": "六个月到184天；错落纸条形成时间堆积，逐项读消息类别",
+      "source_images": [
+        "IMG03",
+        "IMG02"
+      ]
+    },
+    {
+      "start_s": 57.36,
+      "end_s": 64.16,
+      "scene": "memo",
+      "story_reason_zh": "旁白提到语音备忘录后才出现实际音频波形",
+      "source_images": [
+        "IMG03"
+      ]
+    },
+    {
+      "start_s": 64.16,
+      "end_s": 71.92,
+      "scene": "wake",
+      "story_reason_zh": "三周前与守灵：收掉信息堆积，用暗色窄幅回忆和黑丝带",
+      "source_images": [
+        "IMG03"
+      ]
+    },
+    {
+      "start_s": 71.92,
+      "end_s": 77.6,
+      "scene": "camilla",
+      "story_reason_zh": "Camilla原句，人物纸片与撕裂引语互相压住",
+      "source_images": [
+        "IMG03"
+      ]
+    },
+    {
+      "start_s": 77.6,
+      "end_s": 83.36,
+      "scene": "reply",
+      "story_reason_zh": "Julian回答时两个人物纸片分离，裂缝承担关系含义",
+      "source_images": [
+        "IMG02",
+        "IMG01"
+      ]
+    },
+    {
+      "start_s": 83.36,
+      "end_s": 93.28,
+      "scene": "mirror",
+      "story_reason_zh": "叙述回到后视镜：用真正的镜形裁口回到驾驶者",
+      "source_images": [
+        "IMG13"
+      ]
+    },
+    {
+      "start_s": 93.28,
+      "end_s": 98.0,
+      "scene": "stillness",
+      "story_reason_zh": "没有悲伤：人物停住，其他层离开，克制也是设计",
+      "source_images": [
+        "IMG01"
+      ]
+    },
+    {
+      "start_s": 98.0,
+      "end_s": 106.8,
+      "scene": "silence",
+      "story_reason_zh": "殡仪馆是比喻，只用烛影与空白，不编造新剧情现场",
+      "source_images": [
+        "IMG01"
+      ]
+    },
+    {
+      "start_s": 106.8,
+      "end_s": 111.68,
+      "scene": "precision",
+      "story_reason_zh": "丈夫的精确：字体、准线与裁口由松散变为精密",
+      "source_images": [
+        "IMG02"
+      ]
+    },
+    {
+      "start_s": 111.68,
+      "end_s": 116.16,
+      "scene": "ownership",
+      "story_reason_zh": "父亲与Julian的权力关系，以人物层的大小和前后表达",
+      "source_images": [
+        "IMG05",
+        "IMG02"
+      ]
+    },
+    {
+      "start_s": 116.16,
+      "end_s": 120.0,
+      "scene": "memory",
+      "story_reason_zh": "以Julian的脸与记忆关键词结束，不提前展示事故",
+      "source_images": [
+        "IMG02"
+      ]
+    }
+  ]
+}

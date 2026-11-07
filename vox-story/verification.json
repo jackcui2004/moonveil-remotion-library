@@ -1,0 +1,32 @@
+{
+  "seconds": 120,
+  "frames": 3600,
+  "width": 1920,
+  "height": 1080,
+  "source_images_used": [
+    "IMG01",
+    "IMG02",
+    "IMG03",
+    "IMG05",
+    "IMG06",
+    "IMG13"
+  ],
+  "new_ai_images": 0,
+  "new_ai_videos": 0,
+  "narration_source": "provided full_novel_Aria_Helio.mp3, original first118.16s, delayed1.833s; no speed change",
+  "captions": "Whisper tiny.en segment timestamps with spelling corrections; not a human word-level forced alignment",
+  "qa": {
+    "full_decode_passed": true,
+    "reviewed_static_frames": 16,
+    "continuous_windows": [
+      "36-38",
+      "77-79",
+      "83-85"
+    ],
+    "image_count": 6,
+    "new_generated_images": 0,
+    "new_generated_videos": 0,
+    "scope": "120-second prototype with17 authored narrative stages; no claim of universal viewer engagement or final ninety-minute pacing"
+  },
+  "video_sha256": "c421cc1a985860b853bfd5e7a674c563134dd35ce918d84cfe50291b7f3978ab"
+}
