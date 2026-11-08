@@ -16,6 +16,14 @@
 
 本例使用6张已有图，新增AI图片0、AI视频0，含现成旁白和字幕。90分钟素材预算以24–30张图、0–2段视频为参考目标，按剧情复杂度调整。本例是人工/模型阅读后逐段设计并编码的样片，不是任意小说一键编排系统，也不把这17个镜头固定给下一篇。
 
+## 新增：从小说到有声成片的12步实操
+
+[在线阅读完整流程](https://jackcui2004.github.io/moonveil-remotion-library/workflow/) · [镜头怎么编排](https://jackcui2004.github.io/moonveil-remotion-library/workflow/#step-04) · [Markdown正文](workflow/README.md) · [模型执行入口](workflow/templates/director-brief.txt)
+
+2026-11-08整理。包含本篇人物和封面锁定、语义节点与逐镜理由、同图派生、去重素材预算、Muse提示词、实际素材接入、真实配音对齐、Remotion组件、精确画面复用与AAC声音验收。附分镜、Muse任务、电影风格与交付检查模板。
+
+本次长片实际使用28图2视频、212个主体镜头、25类布局，配音83分33秒。公开的是方法与空白模板，不包含本篇全文、完整音轨字幕、人物素材或成片；不宣称任意小说可无人审阅一键编排。
+
 ## GitHub Pages
 
 Settings → Pages → Deploy from a branch → main / (root)。根目录有index.html和.nojekyll，无需构建依赖。
@@ -30,3 +38,4 @@ Settings → Pages → Deploy from a branch → main / (root)。根目录有inde
 [在线逐项观看](https://jackcui2004.github.io/moonveil-remotion-library/motion-atlas/) · [分类与照片复用指南](motion-atlas/planning.md) · [65个独立源码入口](motion-atlas/project/src/effects/) · [全部演示视频](motion-atlas/videos/All-65.mp4)
 
 按九类剧情用途选择，含65个独立视频、每项照片预算与复用规则，以及完整工程。
+

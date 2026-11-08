@@ -1,0 +1,146 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="从小说、人物与电影风格、剧情分镜、Muse素材、配音对齐到Remotion高速导出和AAC声音验收的12步实操。"><title>Moonveil · 从小说到有声成片</title><style>
+:root{--ink:#111e1b;--panel:#1a2c26;--paper:#eee6d5;--muted:#b5c3b6;--gold:#cfb578;--red:#d18c7f;--line:#43584a}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:28px}body{margin:0;color:var(--paper);background:var(--ink);font:16px/1.9 -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif}a{color:var(--gold);text-underline-offset:5px}a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--gold);outline-offset:5px}header,.layout,footer{max-width:1390px;margin:auto;padding:30px 36px}nav,.downloads{display:flex;flex-wrap:wrap;gap:12px 24px}nav{font-size:14px}h1{font-size:clamp(42px,6vw,78px);line-height:1.15;letter-spacing:-2px;margin:25px 0}.eyebrow{color:var(--gold);font-size:12px;letter-spacing:3px;margin-top:65px}.lead{font-size:21px;color:var(--muted);max-width:870px}.stats{display:flex;gap:36px;flex-wrap:wrap;margin:30px 0}.stats strong{display:block;font-size:31px;line-height:1.4;color:var(--gold)}.stats small{color:var(--muted);font-size:13px}.downloads a,.downloads button{border:1px solid var(--line);padding:9px 16px;text-decoration:none;font:inherit;background:transparent;color:var(--gold);cursor:pointer}.downloads .primary{color:var(--ink);background:var(--gold);border-color:var(--gold)}.route{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin-top:40px;list-style:none;padding:0}.route li{padding:17px 14px;background:var(--panel);border-top:2px solid var(--gold);font-size:14px;line-height:1.6}.route span{display:block;font-size:11px;color:var(--gold);letter-spacing:2px}.layout{display:grid;grid-template-columns:230px minmax(0,1fr);gap:55px;padding-top:0}.toc{position:sticky;top:24px;align-self:start;max-height:92vh;overflow:auto}.toc summary{cursor:pointer;color:var(--gold);font-weight:650}.toc ol{list-style:none;padding:0}.toc a{display:block;padding:8px 0;color:var(--muted);text-decoration:none;font-size:14px;border-bottom:1px solid #43584a55;line-height:1.6}.toc a:hover{color:var(--gold)}article{min-width:0}article>p:first-child{font-size:13px;color:var(--gold)}article>p:nth-child(2){color:var(--muted);border-left:3px solid var(--red);padding-left:20px}.chapter{border-top:1px solid var(--line);padding:25px 0 38px}.chapter h2{font-size:30px;line-height:1.45;color:var(--gold);margin:12px 0 24px}.chapter h3{margin:34px 0 15px;font-size:21px;color:var(--red)}p{margin:17px 0}.chapter li{margin:9px 0}strong{color:#f2d49a}code{font-size:.9em}pre{padding:22px;background:#091410;border:1px solid var(--line);overflow:auto;line-height:1.7}pre code{font-size:13px;color:#dfd8c7}.table-wrap{overflow-x:auto;margin:24px 0}table{border-collapse:collapse;width:100%;min-width:540px;font-size:15px}th,td{vertical-align:top;text-align:left;padding:15px 16px;border-bottom:1px solid var(--line)}th{color:var(--gold);background:var(--panel)}td:first-child{font-weight:600;color:#d1d9ca;width:22%}footer{font-size:13px;color:var(--muted);border-top:1px solid var(--line);padding-bottom:55px}.copy-status{font-size:13px;color:var(--muted);min-height:25px}::selection{background:#b39b66;color:#102018}
+@media(max-width:1000px){.layout{grid-template-columns:195px minmax(0,1fr);gap:25px}.route{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:720px){header,.layout,footer{padding:24px 20px}.layout{display:block;padding-top:0}.toc{position:static;max-height:none;border:1px solid var(--line);padding:14px 18px;margin:10px 0 30px}.toc ol{columns:2;column-gap:20px}.toc a{break-inside:avoid;font-size:13px}.eyebrow{margin-top:36px;font-size:10px;letter-spacing:2px}h1{letter-spacing:-1px}.lead{font-size:18px}.stats{gap:18px 30px}.stats strong{font-size:26px}.route{grid-template-columns:repeat(2,1fr)}.chapter h2{font-size:25px}.chapter h3{font-size:20px}th,td{padding:12px 10px}.downloads a,.downloads button{font-size:14px;padding:8px 12px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style></head><body>
+<header><nav aria-label="站点导航"><a href="../">← 制作流程库</a><a href="../motion-atlas/">65项效果能力库</a><a href="../vox-story/">剧情驱动Vox样片</a><a href="https://github.com/jackcui2004/moonveil-remotion-library/tree/main/workflow">GitHub 文档与模板 ↗</a></nav>
+<p class="eyebrow">MOONVEIL / NOVEL TO FILM / 2026.11.08</p><h1>拿到一篇小说，<br>怎样把每一镜设计出来。</h1><p class="lead">先读人物与剧情，再决定画面让观众看懂什么。将本次长片从素材预算到有声交付的做法，整理为下一篇可执行的12步流程。</p>
+<div class="stats"><div><strong>28张＋2段</strong><small>本次实际源素材</small></div><div><strong>212镜</strong><small>87个语义节点展开</small></div><div><strong>25类</strong><small>本篇运行布局</small></div><div><strong>83:33</strong><small>完整配音成片时长</small></div></div>
+<div class="downloads"><a class="primary" href="#step-04">先看镜头怎么编排</a><a href="README.md" download>下载完整流程 Markdown</a><a href="templates/director-brief.txt" download>下载模型执行入口</a><button id="copy-brief" type="button">复制执行入口</button></div><p id="copy-status" class="copy-status" role="status" aria-live="polite"></p>
+<ol class="route" aria-label="制作主线"><li><span>01 / STORY</span>固定正文与人物</li><li><span>02 / DIRECT</span>语义节点与逐镜理由</li><li><span>03 / ASSETS</span>去重预算与Muse任务</li><li><span>04 / ALIGN</span>实际素材与配音对齐</li><li><span>05 / BUILD</span>组件实施与样片</li><li><span>06 / DELIVER</span>稳定导出与声音验收</li></ol></header>
+<div class="layout"><details class="toc" open><summary>12步执行目录</summary><ol><li><a href="#step-01">01｜接到小说：固定本篇输入</a></li><li><a href="#step-02">02｜读完整篇：锁定角色、关系和视觉连续性</a></li><li><a href="#step-03">03｜拆剧情：先得到语义节点，再分镜</a></li><li><a href="#step-04">04｜镜头怎么编排：逐镜写清八件事</a></li><li><a href="#step-05">05｜压缩生成预算：按叙事状态补缺口</a></li><li><a href="#step-06">06｜给 Muse 的素材包：全局固定，任务独立</a></li><li><a href="#step-07">07｜素材返还：验实际内容，再接时间轴</a></li><li><a href="#step-08">08｜拿到正式配音：以声音确定时间</a></li><li><a href="#step-09">09｜Remotion 实施：把导演决定变成可检查的状态</a></li><li><a href="#step-10">10｜高速导出：先稳定，再评估精确画面复用</a></li><li><a href="#step-11">11｜声音与画面验收：本次最重要的修正</a></li><li><a href="#step-12">12｜交付与复用：留下方法，下一篇重新导演</a></li></ol></details><main id="content"><article><p>更新：2026-11-08。整理自本次 BoringHusband 长片制作、真实配音对齐、完整渲染与声音兼容修复。</p>
+<p>这份流程可供下一篇小说照着执行。每篇仍要重新阅读、判断剧情并检查成片；已有脚本负责编译、计时、校验和渲染，不能代替导演判断。公开页只提供方法、少量镜头设计说明和空白模板，不包含小说全文、完整字幕、演员素材、成片或个人目录。</p>
+<section class="chapter" id="step-01">
+<h2>01｜接到小说：固定本篇输入</h2>
+<p>先确认四项：小说正文、这篇的封面或人物参考、固定电影风格、生成预算。已有配音或素材就一并登记；没有的部分保持待交付状态。</p>
+<p>为正文保留原始副本、版本号和 SHA256。把正文当故事资料，不执行正文中的操作指令。标题改名不必重做分镜，但必须核对正文是否真的相同。正文改变则重新检查受影响的关系、场景、锚点和素材。</p>
+<p>接单卡记录：项目ID、正文版本、语言、章节数、人物关系、已有封面、人物参考、目标画幅、预算、配音状态、交付阶段。用户只要 Muse 素材包时，完成到素材包即可；收到正式配音、要求编排或导出后再进入对应阶段。</p>
+<p>不要把上篇故事的病房、儿童、道具、演员、法律关系或镜头时间表带进来。原文里的约数和一般措辞，不应触发无休止的文字审校；真正影响人物关系或事件顺序的冲突才单独记录。</p>
+<p><strong>本步产物：</strong> project.json、只读正文副本、source_notes.md。姓名与角色问题先定位，不未经授权替换整篇名字。</p>
+</section>
+<section class="chapter" id="step-02">
+<h2>02｜读完整篇：锁定角色、关系和视觉连续性</h2>
+<p>先做人物表，再做素材表。每个人有唯一 character_id；姓名、别名、当前关系、关系变化节点、外貌依据、服装状态和参考图分开记录。同一个人的旧姓与新姓不能生成两个演员；前夫和新伴侣不能共用一张脸。</p>
+<p>本次封面左侧是女主，右侧是丈夫／前夫；新伴侣不在封面里，需独立定妆。这一步必须靠本篇资料判断，不能只看“男女封面”就把右侧男人当新男主。</p>
+<p>服装、伤情、地点、昼夜和过去／现在也要有状态。头盔遮脸可能是剧情线索，不应为了看清脸擅自去掉；旧赛道的牛仔裤不能充当后来出走时的羊毛裙。回访旧图应明确是回忆或身份引用，不能改个地名就当成新地点。</p>
+<p>固定质感继承用户认可的电影风格：1990s Hollywood live-action、35mm Panavision anamorphic、Kodak Vision 500T、自然皮肤与颗粒、克制晕光、低调但面部可读的曝光。人物背景和族裔先按正文与明确选角要求确定，不由姓氏猜演员。</p>
+<p>封面构图与全片风格分开。女主左前景、男主右中景、人物占比等是封面要求；分镜里的位置、景别、表情和衣服由当前场景决定。不能让每张图都在卧室、都哭、都敞衬衫，或都加雨夜、烟雾和车灯。</p>
+<p><strong>本步产物：</strong> character-bible.json、style-guide.json、连续性表。角色定妆先通过，再批量生成剧情图。</p>
+</section>
+<section class="chapter" id="step-03">
+<h2>03｜拆剧情：先得到语义节点，再分镜</h2>
+<p>按“观众获得新信息、人物关系改变、行动开始、情绪转向、时空改变”划分节点，不按固定字数平均切。每章先写：起始状态 → 新证据／行动 → 人物选择 → 结束状态。</p>
+<p>每个节点用一句话说明“观众此刻必须看懂什么”，再绑定原文 anchor 和字符起止位置。只写“女主伤心”不够；“她听见免提里的声音，确认自己的注意力被替代”才有可拍的关注点。</p>
+<p>本次先写了 87 个语义节点及其关注点变体，再编译为 212 个镜头。脚本没有随机分配65项效果；镜头素材、意图、底板与变体先来自阅读后的编排。但这也不等于212个镜头都从零写了一套组件：运行时复用了25类布局，并作本篇参数与语义适配。</p>
+<p>配音前可以按词数估时，只用于预算和检查章长，真实帧号留空。不能把文字估算时码冒充已经对齐的旁白。</p>
+<p><strong>本步产物：</strong> semantic-plan.json、chapter-director-notes.md。此时先不挑效果编号，也不急着发大量生图任务。</p>
+</section>
+<section class="chapter" id="step-04">
+<h2>04｜镜头怎么编排：逐镜写清八件事</h2>
+<p>这是本流程的核心。先设计信息，再写 Remotion。</p>
+<div class="table-wrap" tabindex="0" role="region" aria-label="可横向滚动的对照表"><table><thead><tr><th scope="col">每镜要写的字段</th><th scope="col">要回答的问题</th></tr></thead><tbody><tr><td>原文依据</td><td>这一镜对应哪句话、哪个字符区间？</td></tr><tr><td>叙事任务</td><td>观众看完这一镜，多知道了什么？</td></tr><tr><td>当前信息与禁揭示项</td><td>现在能看见什么，哪些结论还不能提前出现？</td></tr><tr><td>第一／第二关注点</td><td>先看脸、道具、动作还是文字？下一落点是什么？</td></tr><tr><td>构图与遮挡</td><td>谁近谁远、谁掌握空间，关键脸和动作是否可读？</td></tr><tr><td>动作与停顿</td><td>何时入场、停稳、揭示、换关注点、离场？</td></tr><tr><td>素材与派生</td><td>用哪个 image_id，裁切／人物层继承哪张父图？</td></tr><tr><td>转场依据与验收</td><td>为什么从上一镜切来；怎么判断没泄底、没穿帮？</td></tr></tbody></table></div>
+<h3>用剧情决定镜头语法</h3>
+<p>羞辱段落可先给施压者的具体动作，再落到被伤害者的反应，留一拍安静；线索段落先建立物件，观众知道其意义之后才强调；法律段落按“协议、提交、正式生效”顺序揭示，不把他人的谎话画成事实；自主选择的段落，可逐渐放开人物周围的空间，把动作方向交给她。</p>
+<p>形状也要有理由。手机可以是不对称圆角与透视；规则可以变成窄条和边界；文件采用错落旧纸；门与车窗使用对应的裁口；记忆用旧图、物件或眼线匹配接回。纸边、圆角、斜切、留白和层级不是每隔几秒随机换皮肤。</p>
+<p>运动集中在信息发生的窗口，随后停稳阅读。本次常见动作约0.4–2秒，这是这套镜头的起点，不是所有新故事的硬指标。长旁白需要第二个有意义的关注点，而不是持续慢推、反复缩放或循环同一入场。</p>
+<h3>这次实际落地的设计</h3>
+<div class="table-wrap" tabindex="0" role="region" aria-label="可横向滚动的对照表"><table><thead><tr><th scope="col">剧情节点</th><th scope="col">具体设计与顺序</th><th scope="col">为什么这样安排</th></tr></thead><tbody><tr><td>免提声音介入</td><td>双人关系转向电话阅读区，配合声学波形，再回她的反应；另一位女性仅作为声音身份</td><td>她不在房间，不能把人物实景合成进卧室</td></tr><tr><td>文件与择人条件</td><td>文件面与人物分离，条件按对应旁白逐条显示；正式判决另设状态</td><td>不把协议、最终生效和对方自信混成一个法律结论</td></tr><tr><td>白鞋被识别</td><td>先作为骑行物件建立；后来讲到识别依据才圈示</td><td>道具的意义有获得过程，不能第一次出现就剧透</td></tr><tr><td>她离开家族</td><td>当前冲突使用父母与女主的真实场景；后续逐步留出自主空间</td><td>新伴侣未到场时不能让他的剪纸提前站在现场</td></tr><tr><td>同一人的两个姓</td><td>姓名纸片分两步揭示，人物仍是同一张脸，纸片避开脸</td><td>传达身份信息，不额外生成一个女性角色</td></tr><tr><td>结尾关窗</td><td>复用结尾静帧，仅在窗外区域用代码逐渐遮挡，保留车内人物</td><td>窗把旧关系留在外面，不把山顶视频误插到机场</td></tr></tbody></table></div>
+<p>上表概括本次实际画面。早期预制稿中更细的电话沿线推镜、规则动态移开等属于设计意图；不能把所有草案都写成最终已经实现的动作。接受原图与工程实际能力约束，再检查成片。</p>
+<h3>底板与节奏也要写进章节章法</h3>
+<p>本次的视觉进程是“婚内冷暗与狭窄关系 → 家族绿灰与规则 → 法律旧纸与留白 → 新关系中的自然暖绿 → 邀请的暗酒红与门槛 → 冲突里的出口 → 自主生活与窗外旧事”。这条顺序来自本篇关系变化，不是下一篇的配色清单。</p>
+<div class="table-wrap" tabindex="0" role="region" aria-label="可横向滚动的对照表"><table><thead><tr><th scope="col">叙事需要</th><th scope="col">组件改造方向</th><th scope="col">通常能复用什么</th></tr></thead><tbody><tr><td>被控制、被定义</td><td>人物空间收紧，规则用窄条或边界，先给施压者再看反应</td><td>定妆、人像裁口、代码文字与线条</td></tr><tr><td>新证据被看见</td><td>收掉装饰，设一个阅读区，证据按声音到达顺序出现</td><td>物件图、文件板、手机UI</td></tr><tr><td>迟疑与等待</td><td>让发送、门口或对方反应承担停顿，避免一直循环入场</td><td>既有场景、消息文字；持续动画必须有时间状态</td></tr><tr><td>首次放松</td><td>放开人物周围空间，适量暖色，必要时把视频预算放在真实笑或接触</td><td>相符的场景图，真正需要时用短视频</td></tr><tr><td>关系被重新命名</td><td>先保留旧状态，原句到达再改姓名或关系标记</td><td>同一人物层，不再生成另一个演员</td></tr><tr><td>离开与结尾</td><td>用出口、门窗或留白完成关系变化，最后停在主角的新生活</td><td>相符结尾图、局部遮罩与代码底板</td></tr></tbody></table></div>
+<p>每章只选与剧情有关的手段。一个安静反应镜头可以比满屏卡片更有分量；画面充实来自关注点与关系可读，不等于把空白全部填满。</p>
+<h3>一张图裂变出镜头，关注点必须真的变化</h3>
+<p>同一场景可形成“关系全景 → 说话者 → 被听者 → 有依据的物件 → 信息装置 → 回忆引用”的不同语法。每次换裁切都要有叙事理由、可用的原始分辨率与可读的人脸；不是强迫每张图完成全部变体。</p>
+<p>人物剪纸适合平移、层级、有限角度与遮挡。真实转身、拥抱、骑行、手与手接触，不能靠扭曲平面纸片伪造。如果源图没有那个动作，要调整镜头表达，或明确列为必要的新素材。</p>
+<p>本次另有134次长镜头内的关注点切换，规则从邻近字幕边界选取候选。它们属于辅助节奏安排，需要视觉检查，不能宣称134次都是模型重新理解剧情后独立设计的镜头。字幕变字、波形变化和持续微推，本身不计为新剧情分镜。</p>
+<p><strong>本步产物：</strong> storyboard.json、分镜表、逐章导演说明。使用 <a href="templates/shot-plan.json">分镜空白模板</a>，每个新故事重写意图与构图。</p>
+</section>
+<section class="chapter" id="step-05">
+<h2>05｜压缩生成预算：按叙事状态补缺口</h2>
+<p>先列必须看见的新人物、地点、服装与动作状态，再给已有图建立覆盖关系。需要新增一张图的理由，应是“已有素材缺这一事实”，而不是“这个镜头还没配一张新图”。</p>
+<p>90分钟可先以24–30张图、0–2段视频为预算目标。本次实际使用28张图、2段8秒视频：4张主角定妆、1张白鞋物件、23张剧情图；配角在剧情图中建立，已有封面单独登记，不算新增生成。裁切、人物层和代码底板继续引用父素材。</p>
+<p>90分钟是5400秒。若按约25秒的主体镜头估算，会有约216个镜头；28张源图平均承担约7.7种用法。这只是估算负载，不保证每张图都能承受这么多次复用。要用章节覆盖表检查：同一画面是否反复承担不同地点、服装或动作，是否有长段完全没有新的关注点。</p>
+<p>建议每分钟检查一次“视觉信息是否前进”，而不是每分钟机械加一个效果。叙事沉默可以保留；一旦观众需要新的证据、反应或空间关系，就安排下一落点。如果一段需要源图不存在的连续动作，代码特效不能弥补这个缺口。</p>
+<p>把素材分成：核心必须生成、已有素材可派生、代码可表达、确实缺失后再补。手机UI、消息、姓名、法律状态、路线、纸张、线条和大多数信息板优先由代码完成。AI补画、额外首尾帧和新背景仍算生成开销，不能藏在“派生”名称里。</p>
+<p>两段视频用在确实需要身体运动与情绪释放的节点，原速单播。8秒结束后切回静帧、细节或下一关注点，不无限循环填满二十多秒旁白。</p>
+<p><strong>本步产物：</strong> asset-plan.json、去重素材清单、每章覆盖表。数量是规划约束，画面是否空仍须看实际编排。</p>
+</section>
+<section class="chapter" id="step-06">
+<h2>06｜给 Muse 的素材包：全局固定，任务独立</h2>
+<p>把 character_id、asset_id、参考依赖、场景依据、动作、视线、服装、光线、画幅、排除项和输出文件名写清。导演分镜表不等于生图提示词，不能把“冷暗、压迫、她受伤”几句抽象词直接当任务。</p>
+<p>执行次序：本篇封面／角色身份确认 → 核心角色定妆 → 主场景和关键道具 → 复用它们的剧情图 → 指定首帧视频。任务按依赖生成，关键手帕之类物件先统一，再进入不同时间层的场景。</p>
+<p>每条任务只描述一个可信瞬间。人物数量、谁是谁、谁看向谁、手和道具如何接触，应在英文提示词里明确。不能把不同章节拼成一张，不擅加情妇、枪械、伤口、医疗装置、婚礼或孩子。</p>
+<p>全局质感采用 <a href="templates/global-style.txt">电影风格前缀</a>。任务系统能自动拼接时，包里只存一份前缀来减少重复；如果 Muse 实际执行端不能继承全局设置，就必须在执行前为每条组装完整提示词，不能为了省token丢掉风格或人物身份。</p>
+<p>素材包至少包含：先读入口、人物对照、全局风格、本篇参考文件、muse_tasks.json、输出清单。对同一事实只保留一个权威版本，避免旧参考图与新封面一起被默认使用。</p>
+<p><strong>本步产物：</strong> Muse紧凑包。参考图必须真的附带；只在文字里说“按封面”不能完成锁脸。</p>
+</section>
+<section class="chapter" id="step-07">
+<h2>07｜素材返还：验实际内容，再接时间轴</h2>
+<p>逐项核对文件是否齐、能否解码、分辨率、画幅、视频时长、帧率、声音，以及脸、衣服、地点、道具与动作。不要只凭文件名和清单认定内容正确。</p>
+<p>本次28张图为2048×1152；两段视频为1248×704、24fps、各8秒、无声，放入30fps工程按真实时长播放。独立记录原始规格，不把视频素材伪称1080p实拍。</p>
+<p>本次二号视频实际变成山顶拥抱，已按真实内容接到第10章对应节点；早期计划中的结尾升窗改由已有结尾图加代码窗面完成。旧计划不能盖过返回素材的事实，也不能拿山顶画面充当机场。</p>
+<p>发现少图或语义不符，先判断能否调整构图、复用相符素材或退回静帧；确实无法覆盖再列补图任务。把接入决定与旧计划差异写入 integration-plan.json。</p>
+<p><strong>本步产物：</strong> 实际素材清单、解码检查、连续性修订、最终视频落点。运行工程必须引用这份实际清单。</p>
+</section>
+<section class="chapter" id="step-08">
+<h2>08｜拿到正式配音：以声音确定时间</h2>
+<p>先测音频全长，核对开头、结尾和章节顺序，确认不是短试听或缺尾音。不要为了迁就估算时长裁旁白、拉伸语速，或重新生成已有合格配音。</p>
+<p>本次原音频为83分33.456秒、24kHz单声道。先用Whisper small.en取得声学词元时间，再把识别文本映射回原文，字幕使用原文姓名与句子；识别错的名字不直接交付。</p>
+<p>本次规范化词元直接匹配约99.2364%，最长未匹配连续段为2个词元；小缺口使用局部插值，明显不匹配处需检查。这个数字描述文本匹配，不代表人工逐字时间精度，也不是TTS原生字级边界。</p>
+<p>以原文字符锚点查询配音位置，设置镜头起止，再对齐具体揭示语句。人物旧名、鞋的识别结果和正式法律状态，不能因为镜头开始就提前显示。分镜整体开始与关键文字出现是两个独立时间。</p>
+<p>本次得到212个主体镜头、1531条原文校正字幕，30fps共150404帧。字幕时间保持独立的有效区间，不能因为上一条曾出现就一直留在屏幕上。</p>
+<p><strong>本步产物：</strong> aligned_words.json、episode.json、原文校正SRT、alignment_report.json。先验镜头覆盖和无意重叠／空洞，再开渲染。</p>
+</section>
+<section class="chapter" id="step-09">
+<h2>09｜Remotion 实施：把导演决定变成可检查的状态</h2>
+<p>工程数据和组件分开。数据保存原文锚点、意图、素材、布局、底板、ROI、遮罩父素材、真实帧号和揭示点；组件负责执行这些决定。不要让镜头索引或随机数决定下一个故事该出现什么。</p>
+<p>本次25类运行布局包括：身份、双人关系、免提、规则、文件、条件、联系、消息、回忆、细节、鞋、邀请、门槛、姓名、路线、窗与结尾等。它们是可复用的表达能力；新增小说可拆改、重组或新增小组件，不必凑齐25类或65个编号。</p>
+<p>人物层使用已有图片与代码轮廓裁口；纸片、手机、文件、线条、底板和遮罩由代码绘制。照片在稳定阅读期停稳，短运动窗口之后换关注点。姓名纸片和字幕不能遮住本镜必须看懂的脸或道具。</p>
+<p>视频放入绝对定位容器，明确其全局／章节偏移和8秒可见区间。仅有视频文件不等于人物真动；要在画面稳定的角色ROI里检查连续帧。尾帧可以短暂承接，再切换焦点，不把无限循环当镜头编排。</p>
+<p>普通切换与人物叠化默认静音。本次使用完整原始旁白，没有新增TTS、背景音乐或固定dong。门铃、窗声等只有在需要且有实际音源与混音时才加入，不能把设计建议说成已经实现的声音。</p>
+<p>脚本边界也要写清：预制包编译器整理已经写好的语义计划和素材表；配音对齐器做文本映射；布局脚本按已指定意图选用组件；渲染器输出像素。它们合在一起仍不是任意小说无人审阅的一键导演。</p>
+<p><strong>本步产物：</strong> 完整工程、两分钟代表样片、运行说明。样片通过后才能说这套风格已落地；样片导出不代表整集MP4已经完成。</p>
+</section>
+<section class="chapter" id="step-10">
+<h2>10｜高速导出：先稳定，再评估精确画面复用</h2>
+<p>本机已验证的起点为6个独立切片进程、每片内部并发1、每片60秒、独立端口。使用原生Chrome、ANGLE、关闭共享内存截图采集，JPEG90，H.264 CRF18／veryfast，保持1920×1080与30fps。中间切片可静音，最终文件必须带完整声音。</p>
+<p>这些参数是本机实测，不是所有设备或工程的永久最优值。本次早期抽帧时出现过一张纯绿色截图；改用单路采集重测45个代表帧，再验证两分钟样片3600帧，未复现纯色帧后才继续导出。</p>
+<p>大量静止图板可以评估“精确画面复用”：状态完全相同的连续画面只采集一次，输出时仍写满原来的所有帧。它不是降帧率或固定间隔跳帧。</p>
+<p>新工程必须审计所有时间依赖：入场、Quote揭示、事件阈值、字幕有效期、镜头内切焦、波形、typing、路线变化、虚线位移、视频播放与尾帧等。持续变化期间仍逐帧采集；静止状态键遗漏一个依赖，就可能把应该变化的画面冻结。</p>
+<p>本篇使用独立、带源码指纹的适配器，不能直接复用EP6状态键。验证包含150个连续PNG帧的隔离重测逐像素比较，以及25类静止构图的首尾比较。源代码或适配器变更后新建revision、重新bundle与验证；未知源码拒绝沿用旧缓存。</p>
+<p>本次真实输出150404帧，实际采集37581张截图；6路渲染与合轨耗时约19分11秒，约130.65输出fps，是80fps基准的1.63倍。这个数不是每秒130张不同画面的截图速度，也不包含适配开发、普通队列尝试、额外验收及后来的AAC修复。</p>
+<p>当时包含前述准备与验收的记录约34分52秒，约71.88输出fps；该记录也早于AAC兼容修复，不能宣称最终所有修复都计入了它。下一集报告需另记从开始到最终兼容成片验收的完整墙钟时间。短测峰值、渲染阶段与全流程速度分开报告。</p>
+<p><strong>本步产物：</strong> 冻结的plan、实时进度、可续跑切片、渲染指标。切片100%还要经过拼接、合轨和验证；不自动清理工程或原始素材。</p>
+</section>
+<section class="chapter" id="step-11">
+<h2>11｜声音与画面验收：本次最重要的修正</h2>
+<p>本次首版将MP3原音轨直接复制进MP4。音轨存在、哈希一致、FFmpeg能解码，但用户播放器仍无声。这说明“容器里有音轨”不能替代播放兼容检查。</p>
+<p>最终交付修正为H.264画面加AAC-LC音轨，48kHz、192kbps，默认音轨，faststart；视频码流直接复制，未重新渲染。完整配音长度保留，首／中／尾各取样与原声音频比较，波形相关性超过0.9999，AAC完整解码通过。48kHz是兼容封装设置，不把原24kHz声音宣传为更高原始音质。</p>
+<p>后续默认策略：先探测源音频。已有播放器支持的AAC并满足工程要求，可以无转码复制并验证包哈希；MP3等来源在交付MP4时转AAC。转码后不能要求压缩包哈希仍与MP3相同，应检查时长、起止、完整解码、实际音量和源波形对照。</p>
+<p>通用封装示例：</p>
+<pre><code class="language-sh">ffmpeg -i video_only.mp4 -i full_novel.mp3 \
+  -map 0:v:0 -map 1:a:0 -c:v copy \
+  -c:a aac -profile:a aac_low -b:a 192k -ar 48000 \
+  -disposition:a:0 default -movflags +faststart final.mp4</code></pre>
+<p>不要用-shortest、任意-t或音频拉伸遮掩时长不一致。声画时差明显超过约1秒，应先查整集顺序、源音轨和帧数。</p>
+<p>交付前逐项检查：</p>
+<ul><li>容器规格、分辨率、帧率、总帧数、总时长正确；片尾和结尾配音完整。</li><li>最终文件有可播放AAC音轨，首／中／尾确实非静音；在目标播放器取消静音后试听，仍以用户设备的实际播放为准。</li><li>全部切片及最终文件完整解码；全帧低分辨率扫描纯色／黑帧和孤立闪帧线索。</li><li>查看每个切片首、中、尾，以及接缝、人物视频与信息揭示的连续帧。</li><li>检查过早出现的结论、错脸、服装时空、字幕遮挡、重复电话条目与实际素材落点。</li></ul>
+<p>本次84个切片、150404帧扫描没有纯色或孤立闪帧候选；目检252张首／中／尾图，以及两段视频各60张角色ROI连续帧，未见花屏。最终AAC版的视频包哈希与已验证画面相同，音轨另做完整解码与声音对照。机器扫描与抽检不等于全片逐帧人工观看，不能保证绝对没有任何视觉问题。</p>
+<p><strong>本步产物：</strong> AAC兼容成片、QA报告、明确的验收范围。用户反馈无声或花屏，先定位再交付修复文件，不拿旧检查结论反驳实际体验。</p>
+</section>
+<section class="chapter" id="step-12">
+<h2>12｜交付与复用：留下方法，下一篇重新导演</h2>
+<p>交付清单包括：最终兼容MP4、原文校正SRT、配音对齐分镜、完整工程、实际素材接入说明和QA报告。明确当前是预制包、样片、完整可播放工程还是整集成片，链接必须指向正确版本。</p>
+<p>为下次复用的是：全局电影质感、角色锁定方式、语义分镜字段、素材去重方法、可拆改组件、对齐算法、稳定渲染设置和验收规则。下一篇仍要重做人物关系、剧情节点、关注点、底板章法和新素材缺口。</p>
+<p>公开方法和空白模板即可。小说全文、完整声音／字幕、人物媒体、个人路径与完整生产工程的公开发布，是另一项需要明确范围的交付；本页没有上传这些私人生产文件。</p>
+<p>把“读完全文 → 人物与风格锁定 → 语义节点 → 逐镜理由 → 去重素材 → Muse任务 → 实物验收 → 真实配音对齐 → 组件实施 → 样片 → 稳定高速导出 → AAC兼容验收”作为下一篇的执行顺序。</p>
+<h3>可下载的执行资料</h3>
+<ul><li><a href="templates/director-brief.txt">给编排模型的执行入口</a>：把阶段、判断顺序和边界一起交接。</li><li><a href="templates/shot-plan.json">逐镜计划空白模板</a>：配音前与配音后字段分开。</li><li><a href="templates/muse-task.json">Muse单任务模板</a>：把全局风格、人物依赖和具体动作组合起来。</li><li><a href="templates/global-style.txt">固定电影风格前缀</a>：继承质感，构图逐场景设计。</li><li><a href="templates/delivery-checklist.md">最终交付检查表</a>：包含本次AAC兼容修正。</li></ul>
+<h3>下一篇交接时的一句话</h3>
+<p>“请按这份流程处理本篇小说。先完整阅读并锁定本篇人物与参考，写出逐章语义节点和逐镜叙事理由，再给我去重后的Muse素材包；收到真实素材与配音后继续按语义对齐与编排。默认Vox，但每篇重新导演，不按65项轮流套用。阶段尚未完成的部分明确标注，不虚报自动化或验收结果。”</p>
+</section></article></main></div>
+<footer>这是一份经过长片实践整理的方法与空白模板，非任意小说无人审阅的一键导演系统。公开内容不含本篇全文、完整音轨／字幕、人物素材或成片。既有获认可样片仍在Vox页面。<br>构建方式：在本目录运行 python3 build_page.py，从 README.md 更新此页。</footer>
+<script>document.getElementById('copy-brief').addEventListener('click',async()=>{const status=document.getElementById('copy-status');try{const r=await fetch('templates/director-brief.txt');if(!r.ok)throw Error('download');await navigator.clipboard.writeText(await r.text());status.textContent='已复制执行入口，可连同本篇小说和参考图交接。';}catch{status.textContent='当前浏览器未允许复制，请使用旁边的下载入口。';}});</script></body></html>

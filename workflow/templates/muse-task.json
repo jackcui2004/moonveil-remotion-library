@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "status": "blank_template_not_ready_to_generate",
+  "project_id": "REPLACE_WITH_THIS_STORY_ID",
+  "task_id": "IMAGE_001",
+  "media_type": "image",
+  "output_filename": "IMAGE_001.png",
+  "source_scene_basis": null,
+  "story_time_state": null,
+  "character_ids": [],
+  "reference_files": [],
+  "depends_on_task_ids": [],
+  "global_style_file": "global-style.txt",
+  "scene_prompt_en": "REPLACE_WITH_ONE_SOURCE_SUPPORTED_PHOTOGRAPHIC_MOMENT",
+  "identity_constraints_en": null,
+  "clothing_and_location_constraints_en": null,
+  "action_gaze_hand_contact_en": null,
+  "camera_light_composition_en": null,
+  "scene_specific_exclusions_en": null,
+  "aspect_ratio": "16:9",
+  "target_image_size": "2048x1152_if_supported_without_distortion",
+  "video_only": {
+    "source_first_frame_asset_id": null,
+    "target_duration_seconds": 8,
+    "movement_supported_by_source": null,
+    "identity_and_background_stability": null,
+    "audio_requested": false
+  },
+  "execution": {
+    "compose_global_style_into_each_final_prompt": true,
+    "attach_real_reference_files": true,
+    "do_not_execute_placeholders": true,
+    "one_task_one_scene": true
+  },
+  "acceptance": {
+    "correct_characters_and_face_ids": false,
+    "source_supported_action_and_props": false,
+    "readable_faces_and_plausible_hands": false,
+    "correct_clothes_location_time": false,
+    "no_unrequested_text_or_watermark": false,
+    "actual_media_inspected": false
+  }
+}

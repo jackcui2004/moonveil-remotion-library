@@ -1,0 +1,13 @@
+GLOBAL FILM LOOK — attach this story's actual character references and combine with the specific scene prompt.
+
+1990s Hollywood live-action movie still; 35mm Panavision anamorphic cinematography; Kodak Vision 500T aesthetics. A credible photographed moment from a dramatic film, with real skin pores, natural film grain, restrained optical halation, believable depth of field and lens falloff. Beautiful but real adult characters; retain the source-required age, fatigue and physical state through expression, posture and truthful detail.
+
+Casting, ethnicity, relationships and appearance follow the source and the user's explicit casting decisions. For a modern Western Mafia story, use source-appropriate modern clothes, architecture and behavior. Use only this story's approved face references. A cover partner may be an ex-husband rather than the new romantic lead: use the character-ID map, never guess from cover placement or surnames.
+
+Use the current scene's authentic action, eye lines, clothing, time and place. Preserve physical contact and prop logic. Choose one motivated dominant light appropriate to that location. Deep-black environment/clothing masses, mid-gray supporting forms and selective ivory highlights around the important face or source-compatible clothing; low-key but readable exposure, detailed shadows. Keep the background organized into a few meaningful forms.
+
+Cover composition is not a global storyboard rule. Select foreground/midground position, shot scale, gaze, emotional state and framing for this scene. Do not copy a cover's fixed woman-left/man-right blocking, permanent tears, open shirt or bedroom into every image. Identity reference tasks may be clean single-character studies; narrative tasks must be a moment in progress.
+
+No text, titles, subtitles, logos or watermarks. No collage, split screen or double exposure. No anime, illustration, game rendering, plastic skin or heavy smoothing. No fashion advertisement, stiff posed couple portrait, random gaze at camera or exaggerated screaming. No unsupported weapons, wounds, medical devices, extra lovers, nudity, wedding or children. No automatic rain, smoke, headlights or strong rim light in every scene. Do not hide a key face or action behind arbitrary foreground objects; preserve source-required intentional masking such as a full-face helmet.
+
+This is a reusable look specification, not an executable image task. Fill in the exact people, moment, action, props, wardrobe, eyelines, camera and lighting, attach the references, and inspect the result before accepting it.

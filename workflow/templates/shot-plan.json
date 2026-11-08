@@ -1,0 +1,85 @@
+{
+  "schema_version": "1.0",
+  "status": "blank_template_not_a_renderable_episode",
+  "project_id": "REPLACE_WITH_THIS_STORY_ID",
+  "source_revision": null,
+  "fps": 30,
+  "shots": [
+    {
+      "shot_id": "C01_S001",
+      "beat_id": "B001",
+      "chapter": 1,
+      "source_anchor": "REPLACE_WITH_EXACT_SOURCE_PHRASE",
+      "source_char_start": null,
+      "source_char_end_exclusive": null,
+      "narrative_task": "What does the viewer understand after this shot?",
+      "information_available_now": [],
+      "information_not_yet_revealed": [],
+      "first_focus": null,
+      "second_focus": null,
+      "composition": {
+        "near_subject": null,
+        "far_subject": null,
+        "eyelines_and_action": null,
+        "keep_readable": [],
+        "paper_shape_reason": null,
+        "board_palette_reason": null
+      },
+      "assets": [
+        {
+          "asset_id": "IMAGE_001",
+          "parent_asset_id": null,
+          "use": "full_scene_or_crop_or_character_layer",
+          "character_ids": [],
+          "source_state": "place_time_clothes_action",
+          "roi_normalized": null,
+          "mask_id": null,
+          "requires_new_generation": false
+        }
+      ],
+      "component_family": null,
+      "component_changes_for_this_beat": [],
+      "motion_plan": {
+        "entry_reason": null,
+        "settle_reason": null,
+        "attention_change_reason": null,
+        "exit_reason": null
+      },
+      "overlay": {
+        "text": null,
+        "trigger_source_phrase": null,
+        "trigger_source_char": null,
+        "actual_reveal_frame": null,
+        "actual_hide_frame_exclusive": null
+      },
+      "timing": {
+        "estimated_seconds_before_audio": null,
+        "actual_start_frame": null,
+        "actual_end_frame_exclusive": null,
+        "actual_attention_change_frames": [],
+        "method": "pending_real_audio"
+      },
+      "video": {
+        "asset_id": null,
+        "actual_content_verified": false,
+        "source_duration_seconds": null,
+        "single_play": true,
+        "after_video_focus": null
+      },
+      "transition_from_previous_reason": null,
+      "acceptance": {
+        "source_supported": false,
+        "identity_and_state_match": false,
+        "reveal_not_early": false,
+        "faces_hands_props_readable": false,
+        "real_frame_reviewed": false
+      }
+    }
+  ],
+  "notes": [
+    "All null fields are deliberately pending; do not invent timing before real audio.",
+    "Frame intervals in this template are half-open [start,end); adapt legacy inclusive end_frame explicitly.",
+    "This template describes planning data, not an automatically executed renderer schema.",
+    "AI inpainting or extra reference frames count toward the generation budget."
+  ]
+}
