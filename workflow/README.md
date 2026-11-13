@@ -201,6 +201,18 @@
 
 后续默认策略：先探测源音频。已有播放器支持的AAC并满足工程要求，可以无转码复制并验证包哈希；MP3等来源在交付MP4时转AAC。转码后不能要求压缩包哈希仍与MP3相同，应检查时长、起止、完整解码、实际音量和源波形对照。
 
+**2026-11-13 执行修复：** 之前只有规范写了AAC，总装代码仍会复制MP3。本库现在提供[强制音轨交付检查](tools/audio_delivery.py)、[普通渲染队列](tools/render.py)及[省磁盘总装队列](tools/render_disk.py)。两种队列共享同一检查，精确画面复用也通过普通队列总装，不再另走旧音轨路径。完整公开资料包的对应脚本同时更新。
+
+执行已渲染画面的总装（不用重渲画面）：
+
+```bash
+python3 workflow/tools/audio_delivery.py mux --video video_only.mp4 --audio full_audio.mp3 --output final.mp4 --report audio-qa.json
+```
+
+最终MP4必须包含一条默认启用的AAC-LC音轨。兼容AAC-LC可以复制并校验音频包哈希；其他来源转AAC-LC、48kHz、192kbps。转码音频包哈希记为不适用，必须通过完整音频解码、时长和首中尾波形／音量对照。全静音、缺轨、非AAC-LC、时长不符或错音源会报错；检查通过才发布最终文件及标记完成，失败保留上一份交付，不用 `-shortest` 裁旁白。播放器实际试听仍需单独执行，脚本不会虚报“已听见”。
+
+[真实媒体回归测试](tests/test_audio_delivery.py)覆盖MP3转AAC、AAC原样复制、旧MP3封装拒绝、缺轨、全静音、配音截断、错误音源、保护源文件，以及两种队列的实际总装。GitHub Actions会自动运行这些测试。
+
 通用封装示例：
 
 ```sh

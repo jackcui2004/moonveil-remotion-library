@@ -39,3 +39,7 @@ Settings → Pages → Deploy from a branch → main / (root)。根目录有inde
 
 按九类剧情用途选择，含65个独立视频、每项照片预算与复用规则，以及完整工程。
 
+
+## 导出无声的执行修复（2026-11-13）
+
+[AAC-LC强制交付检查](workflow/tools/audio_delivery.py)已接入[普通队列](workflow/tools/render.py)和[省磁盘总装](workflow/tools/render_disk.py)。MP3等转AAC，画面不重编码；兼容AAC可原样复制。检查音轨类型、默认启用、时长、完整解码和首中尾声音对照；失败不发布、不标记完成。[回归测试](workflow/tests/test_audio_delivery.py)由GitHub Actions自动运行。公开下载包内的对应脚本也已同步，避免只写规范而执行时仍走旧代码。
