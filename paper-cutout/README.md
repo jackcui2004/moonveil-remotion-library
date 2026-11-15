@@ -96,7 +96,7 @@ python3 tools/trim_masks.py --source source-png --masks mask-output --output der
 
 镜头开始与事实出现是两个时间。为金额、人物身份、衣物破口、账本和计数分别登记source_phrase、source_char_start、actual_reveal_frame。照片会提前泄露时，先裁掉或遮住对应区域，而非只延迟旁边的文字。
 
-采用半开区间[start_frame, end_frame_exclusive)，检查全片镜头覆盖、字幕有效区间和视频原速窗口。用[逐镜模板](templates/shot-plan.json)交接；不能把估算时码写成已经对齐。
+帧区间采用左闭右开：start_frame计入，end_frame_exclusive不计入。检查全片镜头覆盖、字幕有效区间和视频原速窗口。用[逐镜模板](templates/shot-plan.json)交接；不能把估算时码写成已经对齐。
 
 ## 08｜先做可播放工程与代表片
 

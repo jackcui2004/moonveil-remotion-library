@@ -55,7 +55,7 @@ python3 tools/trim_masks.py --source source-png --masks mask-output --output der
 <h2>07｜配音决定揭示时间</h2>
 <p>先检查原声首尾、章节顺序和完整时长，再将声学识别词元映射回原文。字幕保留原文名字；小缺口可局部插值，长缺口要回听。文本匹配率不是逐词人工听校率，也不是TTS原生字级时码。</p>
 <p>镜头开始与事实出现是两个时间。为金额、人物身份、衣物破口、账本和计数分别登记source_phrase、source_char_start、actual_reveal_frame。照片会提前泄露时，先裁掉或遮住对应区域，而非只延迟旁边的文字。</p>
-<p>采用半开区间<a href="templates/shot-plan.json">start_frame, end_frame_exclusive)，检查全片镜头覆盖、字幕有效区间和视频原速窗口。用[逐镜模板</a>交接；不能把估算时码写成已经对齐。</p>
+<p>帧区间采用左闭右开：start_frame计入，end_frame_exclusive不计入。检查全片镜头覆盖、字幕有效区间和视频原速窗口。用<a href="templates/shot-plan.json">逐镜模板</a>交接；不能把估算时码写成已经对齐。</p>
 </section>
 <section class="chapter" id="step-08">
 <h2>08｜先做可播放工程与代表片</h2>
