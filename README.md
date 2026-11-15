@@ -16,6 +16,12 @@
 
 本例使用6张已有图，新增AI图片0、AI视频0，含现成旁白和字幕。90分钟素材预算以24–30张图、0–2段视频为参考目标，按剧情复杂度调整。本例是人工/模型阅读后逐段设计并编码的样片，不是任意小说一键编排系统，也不把这17个镜头固定给下一篇。
 
+## 人物剪纸版流程（2026-11-15）
+
+[在线阅读人物剪纸编排](https://jackcui2004.github.io/moonveil-remotion-library/paper-cutout/) · [下一篇执行入口](paper-cutout/director-brief.txt) · [真实轮廓工具](paper-cutout/tools/) · [通用Remotion组件](paper-cutout/starter/src/PaperStage.tsx) · [下载起步工程](paper-cutout/paper-cutout-starter.zip)
+
+将真实alpha人物层、相接人物组、异形纸样和代码物件接入剧情驱动Vox。人物段优先评估真实轮廓分层；照片全景、物件细节与信息装置仍按语义使用，不要求每镜都抠图。本篇30图2视频，派生35层，完成197镜、72分44.767秒整集有声MP4。已写清素材偏差接入、实际配音门控、媒体实体化、源码专属复用验证与AAC验收。公开通用方法和无私人素材的示意，不发布本篇演员、正文、声音或完整字幕。
+
 ## 新增：从小说到有声成片的12步实操
 
 [在线阅读完整流程](https://jackcui2004.github.io/moonveil-remotion-library/workflow/) · [镜头怎么编排](https://jackcui2004.github.io/moonveil-remotion-library/workflow/#step-04) · [Markdown正文](workflow/README.md) · [模型执行入口](workflow/templates/director-brief.txt)
@@ -43,3 +49,4 @@ Settings → Pages → Deploy from a branch → main / (root)。根目录有inde
 ## 导出无声的执行修复（2026-11-13）
 
 [AAC-LC强制交付检查](workflow/tools/audio_delivery.py)已接入[普通队列](workflow/tools/render.py)和[省磁盘总装](workflow/tools/render_disk.py)。MP3等转AAC，画面不重编码；兼容AAC可原样复制。检查音轨类型、默认启用、时长、完整解码和首中尾声音对照；失败不发布、不标记完成。[回归测试](workflow/tests/test_audio_delivery.py)由GitHub Actions自动运行。公开下载包内的对应脚本也已同步，避免只写规范而执行时仍走旧代码。
+

@@ -1,0 +1,15 @@
+{
+  "shot_id": "CH01_SH01",
+  "source": {"anchor": "", "char_start": null, "char_end_exclusive": null},
+  "narrative_task": "",
+  "first_focus": "",
+  "second_focus": "",
+  "forbidden_early_information": [],
+  "assets": [{"parent_asset_id": "IMG_001", "derived_layer_id": "GROUP_A_B", "purpose": ""}],
+  "composition": {"reason": "", "foreground_occluder": "", "caption_safe_area": true},
+  "motion": {"reason": "", "start_frame": null, "end_frame_exclusive": null, "hold_after": true},
+  "reveal_events": [{"source_phrase": "", "source_char_start": null, "actual_reveal_frame": null}],
+  "timing": {"estimated_only": true, "actual_start_frame": null, "actual_end_frame_exclusive": null},
+  "source_pose_supports_action": false,
+  "actual_material_reviewed": false
+}

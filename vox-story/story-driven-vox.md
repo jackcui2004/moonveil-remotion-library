@@ -65,3 +65,12 @@
 [从小说到有声成片：12步流程](../workflow/README.md) · [在线阅读](https://jackcui2004.github.io/moonveil-remotion-library/workflow/) · [逐镜计划模板](../workflow/templates/shot-plan.json)
 
 新文档展开逐镜的叙事任务、信息边界、先后关注点、构图、动作停顿与素材派生，并记录实际长片的配音对齐、渲染和AAC兼容修复。本页样片的17镜不作为下一篇的固定镜头表。
+
+
+## 人物剪纸长片补充（2026-11-15）
+
+[人物剪纸执行流程](../paper-cutout/README.md) · [在线阅读](https://jackcui2004.github.io/moonveil-remotion-library/paper-cutout/) · [下一篇执行入口](../paper-cutout/director-brief.txt) · [通用组件](../paper-cutout/starter/src/PaperStage.tsx)
+
+这次把真实alpha人物层、接触人物分组、异形纸样、代码道具和语义门控用于完整长片：30图2视频，35层派生，197镜，72分44.767秒。图层保留原图RGB，接触的手和身体保留为组；有限位移后停稳。素材的扣子数、动作或地点不符时先改变表达，不能把计划当成实际完成。
+
+人物段优先评估这种轮廓分层，照片全景、物件细节和信息装置按需要并用。新文档提供Mac前景遮罩工具、保留原RGB的后处理、实文件复制、空白模板和无私人素材的起步工程；下一篇仍要重新读剧情、锁定人物、设计构图和按真实声音对齐。精确复用适配器只适用于逐项审计并验证的源码，不继承本篇时间阈值。

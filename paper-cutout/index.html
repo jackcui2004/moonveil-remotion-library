@@ -1,0 +1,80 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Moonveil人物剪纸长片流程：真实alpha轮廓、接触人物分组、异形纸样、语义揭示、有限素材、配音对齐与AAC有声交付。"><title>Moonveil · 人物剪纸编排</title><style>
+:root{--ink:#111e1b;--panel:#1a2c26;--paper:#eee6d5;--muted:#b5c3b6;--gold:#cfb578;--red:#d18c7f;--line:#43584a}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:28px}body{margin:0;color:var(--paper);background:var(--ink);font:16px/1.9 -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif}a{color:var(--gold);text-underline-offset:5px}a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--gold);outline-offset:5px}header,.layout,footer{max-width:1390px;margin:auto;padding:30px 36px}nav,.downloads{display:flex;flex-wrap:wrap;gap:12px 24px}nav{font-size:14px}h1{font-size:clamp(42px,6vw,78px);line-height:1.15;letter-spacing:-2px;margin:25px 0}.eyebrow{color:var(--gold);font-size:12px;letter-spacing:3px;margin-top:65px}.lead{font-size:21px;color:var(--muted);max-width:870px}.stats{display:flex;gap:36px;flex-wrap:wrap;margin:30px 0}.stats strong{display:block;font-size:31px;line-height:1.4;color:var(--gold)}.stats small{color:var(--muted);font-size:13px}.downloads a,.downloads button{border:1px solid var(--line);padding:9px 16px;text-decoration:none;font:inherit;background:transparent;color:var(--gold);cursor:pointer}.downloads .primary{color:var(--ink);background:var(--gold);border-color:var(--gold)}.route{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin-top:40px;list-style:none;padding:0}.route li{padding:17px 14px;background:var(--panel);border-top:2px solid var(--gold);font-size:14px;line-height:1.6}.route span{display:block;font-size:11px;color:var(--gold);letter-spacing:2px}.layout{display:grid;grid-template-columns:230px minmax(0,1fr);gap:55px;padding-top:0}.toc{position:sticky;top:24px;align-self:start;max-height:92vh;overflow:auto}.toc summary{cursor:pointer;color:var(--gold);font-weight:650}.toc ol{list-style:none;padding:0}.toc a{display:block;padding:8px 0;color:var(--muted);text-decoration:none;font-size:14px;border-bottom:1px solid #43584a55;line-height:1.6}.toc a:hover{color:var(--gold)}article{min-width:0}article>p:first-child{font-size:13px;color:var(--gold)}article>p:nth-child(2){color:var(--muted);border-left:3px solid var(--red);padding-left:20px}.chapter{border-top:1px solid var(--line);padding:25px 0 38px}.chapter h2{font-size:30px;line-height:1.45;color:var(--gold);margin:12px 0 24px}.chapter h3{margin:34px 0 15px;font-size:21px;color:var(--red)}p{margin:17px 0}.chapter li{margin:9px 0}strong{color:#f2d49a}code{font-size:.9em}pre{padding:22px;background:#091410;border:1px solid var(--line);overflow:auto;line-height:1.7}pre code{font-size:13px;color:#dfd8c7}.table-wrap{overflow-x:auto;margin:24px 0}table{border-collapse:collapse;width:100%;min-width:540px;font-size:15px}th,td{vertical-align:top;text-align:left;padding:15px 16px;border-bottom:1px solid var(--line)}th{color:var(--gold);background:var(--panel)}td:first-child{font-weight:600;color:#d1d9ca;width:22%}footer{font-size:13px;color:var(--muted);border-top:1px solid var(--line);padding-bottom:55px}.copy-status{font-size:13px;color:var(--muted);min-height:25px}::selection{background:#b39b66;color:#102018}
+@media(max-width:1000px){.layout{grid-template-columns:195px minmax(0,1fr);gap:25px}.route{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:720px){header,.layout,footer{padding:24px 20px}.layout{display:block;padding-top:0}.toc{position:static;max-height:none;border:1px solid var(--line);padding:14px 18px;margin:10px 0 30px}.toc ol{columns:2;column-gap:20px}.toc a{break-inside:avoid;font-size:13px}.eyebrow{margin-top:36px;font-size:10px;letter-spacing:2px}h1{letter-spacing:-1px}.lead{font-size:18px}.stats{gap:18px 30px}.stats strong{font-size:26px}.route{grid-template-columns:repeat(2,1fr)}.chapter h2{font-size:25px}.chapter h3{font-size:20px}th,td{padding:12px 10px}.downloads a,.downloads button{font-size:14px;padding:8px 12px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+.layer-demo{margin:35px 0 45px;background:#e3d4b7;clip-path:polygon(0 2%,25% 0,52% 2%,80% 0,100% 2%,99% 96%,75% 100%,48% 97%,20% 100%,1% 96%);color:#20392f;padding:24px}.layer-demo svg{width:100%;height:auto;display:block}.layer-demo p{font-size:13px;margin:10px 8px}.demo-buttons{display:flex;gap:12px;flex-wrap:wrap}.demo-buttons button{font:inherit;border:1px solid #526351;background:transparent;color:#20392f;padding:8px 14px;cursor:pointer}.demo-buttons button[aria-pressed=true]{background:#20392f;color:#efe4cb}.person-b{opacity:0;transform:translateX(24px);transition:opacity .7s,transform .7s}.demo-quote{opacity:0;transition:opacity .6s}.layer-demo[data-state="1"] .person-b,.layer-demo[data-state="2"] .person-b{opacity:1;transform:translateX(0)}.layer-demo[data-state="2"] .demo-quote{opacity:1}.case-note{font-size:14px;color:var(--muted)}@media(prefers-reduced-motion:reduce){.person-b,.demo-quote{transition:none}}
+</style></head><body><header><nav aria-label="站点导航"><a href="../">← 制作流程库</a><a href="../workflow/">小说到成片 · 12步</a><a href="../vox-story/">剧情驱动Vox</a><a href="https://github.com/jackcui2004/moonveil-remotion-library/tree/main/paper-cutout">GitHub 文档与代码 ↗</a></nav><p class="eyebrow">MOONVEIL / PHOTOGRAPHIC PAPER CUTOUT / 2026.11.15</p><h1>人物有轮廓，<br>镜头有剧情。</h1><p class="lead">把真实图片中的人物、接触关系和物件分成可解释的图层。用纸样、门帘、镜面和短运动安排关注点，信息随旁白到达，阅读时停稳。</p><div class="stats"><div><strong>30图＋2视频</strong><small>本篇实际生成素材</small></div><div><strong>35层</strong><small>已有原图的alpha派生</small></div><div><strong>197镜</strong><small>按剧情写的完整编排</small></div><div><strong>72:44.8</strong><small>已完成整集有声MP4</small></div></div><div class="downloads"><a class="primary" href="#step-05">先看人物怎么分层</a><a href="director-brief.txt" download>下载下一篇执行入口</a><button id="copy-brief">复制执行入口</button><a href="paper-cutout-starter.zip" download>下载轻量起步工程</a><a href="README.md">Markdown正文</a></div><p id="copy-status" class="copy-status" role="status" aria-live="polite"></p><section class="layer-demo" id="layer-demo" data-state="0" aria-label="可交互图层示意"><svg viewBox="0 0 1200 430" role="img" aria-label="两个整体人物轮廓、门框遮挡及延后出现的信息"><path d="M50 367L1140 350" stroke="#947d56" stroke-width="2"/><g transform="translate(260,25) scale(.39)"><path d="M146 145L120 126L114 88L123 45L152 20L199 23L230 51L238 94L218 128L197 146L202 177L254 207L280 357L255 422L239 374L218 278L222 493L250 842L205 868L177 637L163 876L115 878L130 505L119 277L98 390L74 418L68 350L94 207L143 178Z" fill="#3c594a"/><path d="M146 177L179 257L202 177M179 257V500" fill="none" stroke="#cbb68e" stroke-width="5"/></g><g class="person-b"><g transform="translate(665,18) scale(.40)"><path d="M146 145L120 126L114 88L123 45L152 20L199 23L230 51L238 94L218 128L197 146L202 177L254 207L280 357L255 422L239 374L218 278L222 493L250 842L205 868L177 637L163 876L115 878L130 505L119 277L98 390L74 418L68 350L94 207L143 178Z" fill="#38352f"/><path d="M146 177L179 257L202 177M179 257V500" fill="none" stroke="#cbb68e" stroke-width="5"/></g></g><path d="M580 38L648 27L664 375L598 386Z" fill="#765640"/><g class="demo-quote" fill="#20392f" font-size="25" font-family="serif"><text x="880" y="175">到原句，才揭示。</text><text x="880" y="215" font-size="18">随后停稳，留给阅读。</text></g></svg><div class="demo-buttons"><button data-state="0" aria-pressed="true">1 · 建立空间</button><button data-state="1" aria-pressed="false">2 · 到点揭示人物</button><button data-state="2" aria-pressed="false">3 · 停稳读信息</button></div><p>程序轮廓只说明图层关系。实际制作替换为经过检查的真实alpha人物图；相接的身体保留为同一组。</p></section></header><div class="layout"><details class="toc" open><summary>人物剪纸执行目录</summary><ol><li><a href="#step-01">01｜本次验证了什么</a></li><li><a href="#step-02">02｜先把剧情写成视觉任务</a></li><li><a href="#step-03">03｜先算需要什么，再给Muse任务</a></li><li><a href="#step-04">04｜按实际内容接入素材</a></li><li><a href="#step-05">05｜提取真实轮廓，并保留接触关系</a></li><li><a href="#step-06">06｜构图与动作怎样落地</a></li><li><a href="#step-07">07｜配音决定揭示时间</a></li><li><a href="#step-08">08｜先做可播放工程与代表片</a></li><li><a href="#step-09">09｜精确画面复用必须按源码重审</a></li><li><a href="#step-10">10｜声音、画面与交付一起验收</a></li></ol></details><main><article><p>2026-11-15。沿用剧情驱动 Vox 的判断顺序，把人物从实际图片中提取为透明图层，与旧纸、布料、门帘、镜面和代码道具一起编排。先确定观众此刻要看懂什么，再决定哪些层出现、谁遮住谁、何时停稳。</p>
+<p><a href="https://jackcui2004.github.io/moonveil-remotion-library/paper-cutout/">在线阅读与图层示意</a> · <a href="director-brief.txt">下一篇执行入口</a> · <a href="starter/src/PaperStage.tsx">通用组件</a> · <a href="paper-cutout-starter.zip">下载轻量起步工程</a> · <a href="../workflow/">原12步流程</a></p>
+<section class="chapter" id="step-01">
+<h2>01｜本次验证了什么</h2>
+<div class="table-wrap" tabindex="0" role="region" aria-label="可横向滚动的对照表"><table><thead><tr><th scope="col">项目</th><th scope="col">实际结果</th></tr></thead><tbody><tr><td>正文与编排</td><td>10章、197镜，逐镜绑定原文锚点与叙事任务</td></tr><tr><td>已生成素材</td><td>30张2048×1152图片；2段8秒视频，实际1248×704、24fps</td></tr><tr><td>人物派生</td><td>35个alpha轮廓层；来自已有原图，新增生成图为0</td></tr><tr><td>整集</td><td>1920×1080、30fps，130943帧，72分44.767秒</td></tr><tr><td>声音</td><td>保留完整原声；交付H.264＋默认AAC-LC、48kHz</td></tr><tr><td>导出</td><td>77个切片，6路并行，每片内部并发1</td></tr><tr><td>精确画面复用</td><td>18279次截图，仍输出全部130943帧；动态窗口逐帧采集</td></tr><tr><td>验收</td><td>全片音画解码；全部切片低分辨率全帧扫描；231张首中尾图及32张视频运动样本检查；实际播放器取消静音播放</td></tr></tbody></table></div>
+<p>这些是本篇结果。下一篇不固定197镜、18类布局或35层轮廓，也不把“45帧后可停稳”套到别的组件。机器扫描和抽检不等于逐帧人工观看。</p>
+<p>本页公开方法、通用工具、空白模板和不带私人素材的演示工程。生产用正文、演员图、配音、完整字幕和成片仍在原项目；页面中的轮廓示意不是演员素材。</p>
+</section>
+<section class="chapter" id="step-02">
+<h2>02｜先把剧情写成视觉任务</h2>
+<p>完整阅读，锁定本篇人物唯一ID、关系、服装、年代、地点和用户最新选定的参考。新封面替换旧参考时，同步修改人物表、Muse参考文件和工程入口，避免两套演员同时成为权威。</p>
+<p>每镜先写五件事：原文锚点、观众获得的新信息、首先看的对象、随后看的对象、此刻禁止提前出现的内容。再决定全景、独立人物、接触人物组、物件局部或代码信息装置。</p>
+<p>同一图的有效派生可以是：关系全景 → 施压者 → 被听者 → 手中物件 → 信息揭示 → 后来的回访。变体要改变关注点。换一个边框、字幕换字和持续慢推不单独算新分镜。</p>
+<p>形状从剧情中找：帘幕承担遮挡，三面镜承担反射，纸样承担选择与修改，衣服夹层承担秘密，工具留下的痕迹承担前后呼应。下一篇应找自己的视觉线索，不能机械复制这套量尺和缝线。</p>
+</section>
+<section class="chapter" id="step-03">
+<h2>03｜先算需要什么，再给Muse任务</h2>
+<p>90分钟先以24–30张图、最多2段视频为预算参考，按本篇不可替代的事实调整。定妆、独立背景和额外首尾帧都计入；同图裁切和alpha派生记录父图，不另算生成，但也不能把新生图伪装成派生。</p>
+<p>优先准备适合后续使用的素材：主要人物轮廓和手部清楚、与背景有可辨边界；主场景保留可站人的空间；复杂接触动作有专门图；视频首帧尽量复用已有图。不要为每镜单独生成一张。</p>
+<p>Muse生成摄影素材，工程负责剪纸排版。全局电影风格、人物身份和每镜服装动作在执行前合成独立提示词；封面的固定站位不复制给所有剧情图。可用<a href="templates/asset-task.json">素材任务模板</a>。</p>
+</section>
+<section class="chapter" id="step-04">
+<h2>04｜按实际内容接入素材</h2>
+<p>查看所有图片和视频，读取真实尺寸、帧率、时长、声音和动作。生成端的“通过”记录不代替接入检查。差异写成“原计划 → 实际内容 → 接入决定”，与原素材一起保留。</p>
+<div class="table-wrap" tabindex="0" role="region" aria-label="可横向滚动的对照表"><table><thead><tr><th scope="col">实际差异</th><th scope="col">编排方法</th></tr></thead><tbody><tr><td>视频只有亲近和镜头推进，没有拍到计划的缝针动作</td><td>只把它当作相处的动态段落；动作细节用相符静图或代码示意承接</td></tr><tr><td>照片的衣扣数多于原文</td><td>避开展示完整错误数量，使用局部和独立的精确计数示意</td></tr><tr><td>原图肢体被桌面或画框挡住</td><td>保留原遮挡、加有依据的前景，或留在照片裁口内；不补出不存在的腿和手</td></tr><tr><td>缺少车内、后台等新地点的摄影素材</td><td>用有依据的衣料或物件局部过渡，明确是编辑表达，不把旧房间改名冒充新现场</td></tr></tbody></table></div>
+<p>视频按实测时长原速单播。照片适合有限平移、前后层级、换焦与遮挡；真实转身、拥抱和手部接触必须由实际姿态或视频支持。</p>
+</section>
+<section class="chapter" id="step-05">
+<h2>05｜提取真实轮廓，并保留接触关系</h2>
+<p>Mac示例使用Apple Vision前景实例遮罩：<a href="tools/VisionMasks.swift">VisionMasks.swift</a>。它提取前景实例，不保证每一例都只是一名人物；可能把接触的两人、衣台或桌子分成同一组。每层必须检查透明通道和真实边界。</p>
+<pre><code class="language-sh">xcrun swiftc tools/VisionMasks.swift -o vision-masks
+./vision-masks source-png mask-output IMG_A IMG_B
+python3 -m pip install Pillow
+python3 tools/trim_masks.py --source source-png --masks mask-output --output derived-v1</code></pre>
+<p>输入使用PNG；名称不带扩展名。Swift输出原尺寸透明图与实例清单。后处理从原图重新复制RGB，只取遮罩的alpha，再按实际边界裁切，输出父图哈希、边界和图层尺寸。原图不变，不为抠图重新生成演员。</p>
+<div class="table-wrap" tabindex="0" role="region" aria-label="可横向滚动的对照表"><table><thead><tr><th scope="col">轮廓状况</th><th scope="col">实施决定</th></tr></thead><tbody><tr><td>独立完整人物</td><td>可独立改变层级、位置和有限角度</td></tr><tr><td>两人牵手、扶持、接吻</td><td>保持接触组为整体，不拆成两张纸再扭曲拼接</td></tr><tr><td>半身或原本被遮挡</td><td>放在可信的纸边、桌边或照片窗口后，保留其可见范围</td></tr><tr><td>遮罩包含大块桌面、反射或破碎肢体</td><td>回到原图裁口，或人工修轮廓并重新检查；不直接当成合格独立人物</td></tr></tbody></table></div>
+<p>每层记录parent_asset_id、原图哈希、人物组ID、bbox、服装/时空状态与验收结果，参考<a href="templates/cutout-layer.json">轮廓登记模板</a>。35层不是35张新演员图；同图中多个前景实例也不等于多个可随意重组的人。</p>
+</section>
+<section class="chapter" id="step-06">
+<h2>06｜构图与动作怎样落地</h2>
+<p><a href="starter/src/PaperStage.tsx">通用组件</a>提供纸纹、异形照片裁口、透明人物层、语义揭示与原速视频窗口。它们执行已经写好的镜头决定，不负责自动挑剧情。</p>
+<div class="table-wrap" tabindex="0" role="region" aria-label="可横向滚动的对照表"><table><thead><tr><th scope="col">镜头目的</th><th scope="col">可用构图</th><th scope="col">动作与停顿</th></tr></thead><tbody><tr><td>看懂关系</td><td>人物大小、前后遮挡、空间距离</td><td>短入场后停稳，主次由本镜决定</td></tr><tr><td>首次出现的人物</td><td>门帘/门框遮挡与局部人物层</td><td>到原文出现点才揭开；不能把完整封面从0秒摆出</td></tr><tr><td>看懂动作细节</td><td>保留原姿态的人物组＋物件局部</td><td>全景建立后切细节，放大时保持比例并检查脸和手</td></tr><tr><td>阅读证据</td><td>撕边纸、夹层、手机、姓名与短文字</td><td>按声音逐项揭示，完成后停稳，不提前给结论</td></tr><tr><td>表现自主选择</td><td>放开人物周围空间，保留本人署名与物件</td><td>由她的选择引出下一层，避免只让旁人移动她</td></tr></tbody></table></div>
+<p>纸纹、阴影、纸样、量尺、缝线、手机、文件和招牌由代码完成。底板色彩与形状跟着本篇章法走。形状变化有原因，不每隔几秒随机换一种皮肤。</p>
+<p>字幕放在独立安全区。裁切保持原宽高比，侧边Quote避开脸和手。半身层的平直底边应有可信的遮挡，不能让残缺的人体悬空；接触人物组不要拉伸。原速视频放入明确的绝对定位窗口，不在底下无限循环。</p>
+</section>
+<section class="chapter" id="step-07">
+<h2>07｜配音决定揭示时间</h2>
+<p>先检查原声首尾、章节顺序和完整时长，再将声学识别词元映射回原文。字幕保留原文名字；小缺口可局部插值，长缺口要回听。文本匹配率不是逐词人工听校率，也不是TTS原生字级时码。</p>
+<p>镜头开始与事实出现是两个时间。为金额、人物身份、衣物破口、账本和计数分别登记source_phrase、source_char_start、actual_reveal_frame。照片会提前泄露时，先裁掉或遮住对应区域，而非只延迟旁边的文字。</p>
+<p>采用半开区间<a href="templates/shot-plan.json">start_frame, end_frame_exclusive)，检查全片镜头覆盖、字幕有效区间和视频原速窗口。用[逐镜模板</a>交接；不能把估算时码写成已经对齐。</p>
+</section>
+<section class="chapter" id="step-08">
+<h2>08｜先做可播放工程与代表片</h2>
+<p>数据保存原文锚点、叙事任务、父素材、轮廓、ROI、遮挡、动作窗口和揭示帧号；组件只执行这些决定。不要通过镜头编号取模来挑布局，也不要求用齐18类或65类。</p>
+<p>先检查各类构图、重要揭示前后、两段视频及末段，再做有声代表片。本次检查197镜代表帧，加视频/门控帧共213张；两分钟样片完成3600帧解码与异常纯色筛查。下一篇需要自己的检查集。</p>
+<p>工程public里的交付媒体应为实文件。本次发现跨目录音频软链接在导出打包时会丢失，因此在冻结渲染工程前复制原图、视频与原声，核对SHA256。<a href="tools/materialize_public.py">materialize_public.py</a>提供有边界的复制工具；图片名、真实扩展名与实际格式一致。</p>
+<p>素材返回后不重跑旧的Muse任务生成脚本覆盖交付清单。工程状态应明确区分“待素材”“可播放工程”“样片”“整集成片”。独立的另一份预览工程按自己的入口播放，不混用其声音、帧率或时间表。</p>
+</section>
+<section class="chapter" id="step-09">
+<h2>09｜精确画面复用必须按源码重审</h2>
+<p>先沿用<a href="../workflow/tools/render.py">渲染队列与声音门禁</a>生成当前源版本的计划。新工程的状态键要覆盖全部可见时间依赖：镜头、有限运动、Quote、事件阈值、字幕选择、视频、遮罩和全局里程碑。</p>
+<p>本篇源码的有限动作最长43帧，适配器保守逐帧采集镜头前45帧，Quote附近20帧、事件附近40帧及整个视频区间；这些值只对应本篇源码，不能变成下一篇默认的截帧规则。</p>
+<p>验证顺序：普通连续PNG组内像素比较 → 独立稀疏截图比较 → 运动/揭示/视频逐帧覆盖 → 章节与全集同一全局帧等价 → 同质量编码短测。源文件、runtime和适配器都固定哈希；变化后新建revision，不能只刷新哈希跳过验证。</p>
+<p>本次18类静止布局组内像素相同，静止与视频短测编码SSIM均1.0。整集输出130943帧，实际截图18279次，输出仍为30fps。队列含启动、编码、拼接、AAC合轨和声音验收约751.6秒；不含之前的适配/短测/bundle，以及之后的视觉与最终解码检查。这不是不同画面的截图fps，也不保证下一篇达到同样速度。</p>
+</section>
+<section class="chapter" id="step-10">
+<h2>10｜声音、画面与交付一起验收</h2>
+<p>H.264画面配默认AAC-LC音轨。MP3原声作为输入保留，交付MP4时转AAC-LC/48kHz；复用本库已有<a href="../workflow/tools/audio_delivery.py">声音门禁</a>，不为新风格另写一条绕过检查的总装路径。转码后检查时长、完整解码、真实音量与首中尾波形，压缩包哈希不适用。</p>
+<p>所有切片和最终MP4完整解码；低分辨率全帧扫描只筛候选。查看每片首中尾、接缝与角色ROI连续帧；字幕变化不能冒充人物运动。最后在实际播放器取消静音播放，记录播放器状态与检查范围。</p>
+<p>本次77切片和全片130943帧扫描无异常纯色候选，231张首中尾图和32张视频运动样本已检查；最终文件全片音画解码通过，并在播放器中非静音播放。结果不等于对所有视觉问题的绝对保证。</p>
+<p>交付整集MP4、SRT、完整工程、接入决定与QA报告；工程ZIP中媒体为实文件，解压后安装依赖即可运行。下一篇复用这里的判断与组件，重新编排人物、剧情、底板和素材缺口。</p>
+</section></article></main></div><footer>本页公开流程、通用代码、空白模板与程序轮廓示意；不含生产用小说全文、演员媒体、声音或字幕。示意不是电影实片，也不是自动小说导演。<br><a href="NOTICE.md">来源与范围</a> · 运行 python3 paper-cutout/build_page.py 可从README重建此页。</footer><script src="demo.js"></script></body></html>

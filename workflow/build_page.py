@@ -91,7 +91,7 @@ def build():
     body, toc = render((ROOT / 'README.md').read_text())
     navigation = ''.join('<li><a href="#' + anchor + '">' + html.escape(title) + '</a></li>' for anchor, title in toc)
     page = '''<!doctype html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="从小说、人物与电影风格、剧情分镜、Muse素材、配音对齐到Remotion高速导出和AAC声音验收的12步实操。"><title>Moonveil · 从小说到有声成片</title><style>''' + CSS + '''</style></head><body>
-<header><nav aria-label="站点导航"><a href="../">← 制作流程库</a><a href="../motion-atlas/">65项效果能力库</a><a href="../vox-story/">剧情驱动Vox样片</a><a href="https://github.com/jackcui2004/moonveil-remotion-library/tree/main/workflow">GitHub 文档与模板 ↗</a></nav>
+<header><nav aria-label="站点导航"><a href="../">← 制作流程库</a><a href="../motion-atlas/">65项效果能力库</a><a href="../vox-story/">剧情驱动Vox样片</a><a href="../paper-cutout/">人物剪纸版流程</a><a href="https://github.com/jackcui2004/moonveil-remotion-library/tree/main/workflow">GitHub 文档与模板 ↗</a></nav>
 <p class="eyebrow">MOONVEIL / NOVEL TO FILM / 2026.11.08</p><h1>拿到一篇小说，<br>怎样把每一镜设计出来。</h1><p class="lead">先读人物与剧情，再决定画面让观众看懂什么。将本次长片从素材预算到有声交付的做法，整理为下一篇可执行的12步流程。</p>
 <div class="stats"><div><strong>28张＋2段</strong><small>本次实际源素材</small></div><div><strong>212镜</strong><small>87个语义节点展开</small></div><div><strong>25类</strong><small>本篇运行布局</small></div><div><strong>83:33</strong><small>完整配音成片时长</small></div></div>
 <div class="downloads"><a class="primary" href="#step-04">先看镜头怎么编排</a><a href="README.md" download>下载完整流程 Markdown</a><a href="templates/director-brief.txt" download>下载模型执行入口</a><button id="copy-brief" type="button">复制执行入口</button></div><p id="copy-status" class="copy-status" role="status" aria-live="polite"></p>
@@ -105,3 +105,4 @@ def build():
 
 if __name__ == '__main__':
     build()
+

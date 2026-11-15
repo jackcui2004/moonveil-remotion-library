@@ -1,0 +1,16 @@
+{
+  "asset_id": "GROUP_A_B",
+  "parent_asset_id": "IMG_001",
+  "parent_sha256": null,
+  "alpha_file": "cutouts/IMG_001-piece-1.png",
+  "role_ids": ["ROLE_A", "ROLE_B"],
+  "is_contact_group": true,
+  "source_size": [null, null],
+  "bbox_half_open": [null, null, null, null],
+  "wardrobe_state": "fill from the current story",
+  "time_and_place_state": "fill from the current story",
+  "occluded_or_out_of_frame_parts": [],
+  "placement_rule": "keep touching bodies together; retain supported occlusion",
+  "rgb_copied_from_unchanged_parent": true,
+  "alpha_and_edges_visually_checked": false
+}

@@ -1,0 +1,16 @@
+{
+  "asset_id": "IMG_001",
+  "type": "image",
+  "cast_ids": ["ROLE_A", "ROLE_B"],
+  "reference_files": ["references/current-cover.png"],
+  "reference_priority": "latest user-selected cover and current character bible",
+  "depends_on": [],
+  "source_anchor": "",
+  "wardrobe_and_scene_state": "",
+  "scene_prompt": "One coherent photographic instant, with the actual faces, hands, contact and clothing required by this story. Keep visible silhouettes usable. Do not generate the editorial collage layout or readable text.",
+  "prompt_assembly": ["global film style", "only this task's cast identities", "scene prompt", "reference priority"],
+  "output": "images/IMG_001.png",
+  "counts_as_new_generation": true,
+  "video_first_frame_reuses_this_image": false,
+  "actual_delivery": {"path": null, "width": null, "height": null, "duration_seconds": null, "reviewed": false}
+}
